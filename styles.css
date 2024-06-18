@@ -1,0 +1,231 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px/16px = 0.625 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.top-header {
+  margin-top: 2.4rem;
+}
+
+.top-header .opener {
+  font-size: 2rem;
+  color: #937b92;
+  font-weight: 400;
+  width: 50rem;
+  line-height: 1.2;
+}
+
+.top-header .header-h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #502050;
+  width: 40rem;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.top-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+  gap: 9rem;
+  margin-left: 2.5rem;
+  flex-direction: row;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 1.2rem;
+  background-color: #f7f2f7;
+  padding: 1.2rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #502050;
+  margin-right: 9rem;
+  width: 75%;
+  flex-direction: row;
+}
+
+.rating-one {
+  margin-left: 3.9rem;
+}
+
+.rating-two {
+  /* margin-left: 4.2rem; */
+  margin-left: 8.1rem;
+}
+
+.rating-three {
+  /* margin-left: 8.3rem; */
+  margin-left: 12.2rem;
+}
+
+.stars {
+  display: inline-block;
+  margin-left: 1.2rem;
+}
+
+.stars svg {
+  transform: scale(0.9);
+}
+
+.main {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  flex-direction: row;
+}
+
+.section-main {
+  background-color: #502050;
+  width: 35rem;
+  padding: 3.2rem;
+  border-radius: 10px;
+}
+
+.section-header-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.person-name {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.verified-buyer {
+  color: #ee68a4;
+  font-size: 1.6rem;
+}
+
+.headshot {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.testimonial {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.section-main-two {
+  margin-top: 3.2rem;
+}
+
+.section-main-three {
+  margin-top: 6.4rem;
+}
+
+@media (max-width: 75em) {
+  .top-div {
+    flex-direction: column;
+  }
+
+  .rating {
+    flex-direction: column;
+    margin: 0;
+    gap: 1.2rem;
+  }
+
+  .top-header,
+  .top-header .opener,
+  .rating {
+    width: 40rem;
+    text-align: center;
+  }
+
+  .section-main {
+    width: 40rem;
+  }
+
+  .rating-one,
+  .rating-two,
+  .rating-three {
+    margin: 1.2rem;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+  .section-main-two,
+  .section-main-three {
+    margin-top: 0;
+  }
+
+  .section-main-three {
+    margin-bottom: 4.8rem;
+  }
+
+  .top-div {
+    gap: 4.8rem;
+    margin-left: 0;
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 29rem) {
+  .top-header,
+  .top-header .header-h1,
+  .top-header .opener,
+  .rating {
+    width: 90vw;
+    text-align: center;
+  }
+
+  main .main {
+    width: 90rem;
+  }
+
+  .section-main-one,
+  .section-main-two,
+  .section-main-three {
+    width: 90%;
+  }
+
+  .top-div {
+    margin: 2.4rem;
+  }
+
+  .top-div {
+    margin-bottom: 8rem;
+  }
+}
